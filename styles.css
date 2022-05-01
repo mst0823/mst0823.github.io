@@ -1,0 +1,364 @@
+/*header*/
+.online-shop-news{
+    text-align: center;
+    text-decoration: none;
+}
+.online-shop-news p{
+    background-color: #E6002D;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.online-shop-news p:hover{
+    opacity: 0.5;
+}
+/*main*/
+/*背景画像*/
+.img_Box{
+    height: 850px;
+    overflow: hidden;
+    position: relative; 
+    
+}
+.main_img {
+    z-index:10;
+    opacity: 0;
+    width: 100%;
+    height: 850px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: anime 36s infinite; 
+}
+.main_img:nth-of-type(2) {
+    animation-delay: 6s; }
+
+  .main_img:nth-of-type(3) {
+    animation-delay: 12s; }
+
+  .main_img:nth-of-type(4) {
+    animation-delay: 18s; }
+
+  .main_img:nth-of-type(5) {
+    animation-delay: 24s; }
+
+  .main_img:nth-of-type(6) {
+    animation-delay: 30s; }
+
+    @keyframes anime {
+        0% {
+              opacity: 0;
+              transform: scale(1.1) ;
+          }
+          8% {
+              opacity: 1;
+          }
+          17% {
+              opacity: 1;
+          }
+          25% {
+              opacity: 0;
+              transform: scale(1.0) ;
+               z-index:9;
+          }
+          100% { 
+              opacity: 0 
+            }
+      }
+/*メインロゴ*/
+.wrapper{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 20;
+}
+/*main-logo-right*/
+.main-logo-right img{
+    height: 125px;
+}
+/*メニュー*/
+.list-wrapper{
+    max-width: 600px;
+    margin: 27px auto;
+    text-align: center;
+}
+.menu{
+    padding: 0;
+    display: inline;
+}
+.menu li{
+    list-style: none;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+
+}
+.menu li a img{
+    height: 15px;
+    vertical-align: middle;
+}
+/*一日一日*/
+.story-wrapper{
+    height: 800px;
+    display: flex;
+}
+.story-container-left{
+    height: 100%;
+    background-color: #F8F7F2;
+    width: 50%;
+}
+.img-box{
+    max-width: 400px;
+    margin:110px auto 30px ;
+    text-align: center;
+}
+.img-box img{
+    margin-bottom: 50px;
+}
+.story-img-c{
+    height: 120px;
+}
+.story-container-right{
+    background-image: url(images/top_img.jpg);
+    width: 50%;
+    background-size: cover;
+}
+.text-box{
+    margin: 0 auto;
+    max-width: 380px;
+}
+.language{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto ;
+}
+.language li{
+    margin: 0 10px;
+    padding: 5px 31px;
+    border: solid black thin;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/*ニュース*/
+.news-title{
+    text-align: center;
+}
+.news-en{
+    font:"Gilda Display";
+    font-size: 34px;
+    margin-bottom: 17px;
+}
+.news-ja{
+    font-size: 11px;
+    border-top: solid black thin;
+    max-width: 60px;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+.news-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.news-1{
+    margin-top: 80px;
+}
+.news-1 h1{
+    font-size :18px ;
+}
+.news-1 p{
+    line-height: 10px;
+    font-size: 13px;
+}
+/*リクルート*/
+.recruit-wrapper{
+    max-width: 485px;
+    margin: 130px auto 100px auto;
+}
+.recruit-wrapper a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 10px;
+}
+.recruit-wrapper img{
+    height: 245px;
+}
+/*sns*/
+.sns-wrapper{
+    max-width: 380px;
+    margin: 0 auto 100px auto;
+    text-align: center;
+}
+.sns-wrapper a{
+    text-decoration: none;
+}
+.sns-wrapper a span{
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.sns-wrapper img{
+    height: 75px;
+
+}
+.sns-icon{
+    border: solid gray thin;
+    border-radius: 50%;
+}
+.sns-name{
+    color: black;
+}
+.sns-follow{
+    font-weight: bold;
+    border: solid #AAAAAA thin;
+    background-color: #AAAAAA;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.sns-wrapper a:hover{
+    opacity: 0.5;
+}
+/*footer*/
+.footer-wrapper{
+    padding-top: 20px;
+    border-top:solid #AAAAAA thin ;
+    text-align: center;
+
+}
+.footer-list{
+    list-style: none;
+}
+.footer-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.footer-list li{
+    margin: 0 13px;
+    display: inline;
+}
+.footer-list li a img{
+    height: 13px;
+    vertical-align: middle;
+}
+.footer-wrapper p{
+    margin: 50px 0 50px 0;
+    color: #AAAAAA;
+    font-size: 12px;
+}
+.footer-line{
+    height: 20px;
+    background-image:repeating-linear-gradient(-45deg,#D7112E,  7px,transparent 0, transparent 14px);
+}
+/* 480px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 650px) {
+/*header*/
+.online-shop-news p{
+    padding: 35px 0;
+}
+.online-shop-news p:hover{
+    opacity: 1;
+}
+.wrapper{
+    display: block;
+}
+
+.main-logo-left{
+    text-align: center;
+    margin-top:350px;
+}
+.main-logo-left img{
+    height: 200px;
+    
+}
+.main-logo-right{
+    float: right;
+    margin-top: 30px;
+}
+.main_img{
+    animation: none;
+    opacity: 1;
+}
+/*リスト*/
+.list-wrapper{
+    max-width: 500px;
+
+}
+.menu{
+    display: block;
+}
+/*一日一日*/
+.story-container-left{
+    width: 100%;
+}
+.story-container-right{
+    width: 0%;
+}
+.text-box{
+    max-width: 500px;
+}
+.language{
+    display: block;
+}
+.language li{
+    margin: 10px auto;
+}
+/*ニュース*/
+.news-wrapper{
+    max-width: 285px;
+}
+.news-1 p{
+    margin: 0;
+    line-height: 18px;
+}
+/*リクルート*/
+.recruit-wrapper{
+    margin: 130px auto 60px auto;
+}
+/*sns*/
+.sns-wrapper a img{
+    height: 55px;
+}
+.sns-wrapper a{
+    font-size: 12px;
+}
+.sns-follow{
+    padding: 5px 15px;
+}
+.sns-wrapper a span{
+    margin: 0 5px;
+
+}
+/*footer*/
+.footer-wrapper{
+    border-top:none;
+}
+.footer-list{
+    padding: 0;
+}
+.footer-list li{
+    display: block;
+    padding: 10px;
+    border-bottom:solid #AAAAAA thin ;
+}
+.footer-home{
+    border-top:solid #AAAAAA thin ;
+}
+}
